@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body id = "target">
+<button id= "beeperOne">Beeper</button>
+<button class = "beeperTwo">Beeper 2</button>
+<button class = "beeperThree">Beerper 3</button>
+<div></div>
+<p id = "output">HEY</p>
+<input id = "color"></input>
+<button id = "go">Click Me</button>
+<ol>
+<li>Here is thing one.</li>
+<li>Here is thing two.</li>
+<li >Here is thing three.</li>
+</ol>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src = "jq1.js" ></script>
+<script >
+
+$('button#go').on('click', function(){ $('p#output').text( $('input#color').val() ).css('color', 'red'); });
+$('button').on('click', function(){alert('hola hop')});
+//.append()
+//Insert content to the end of an element
+// $('p').append('player');
+//for exemple here we will add "player " after the p element
+// 5
+$('#secret').hide() ; 
+
+// 6
+//it will not work we should add '' to the body and backgroud-color and green.
+$('body').css("background-color", 'green');
+//7
+$('body').css("background-color", 'red');
+//8
+$('ol').append("<li>Here is thing four</li>");
+</script>
+</body>
+</html>
